@@ -159,13 +159,13 @@ func Provider() *schema.Provider {
 			"github_membership":                                                     resourceGithubMembership(),
 			"github_organization_block":                                             resourceOrganizationBlock(),
 			"github_organization_custom_role":                                       resourceGithubOrganizationCustomRole(),
-			"github_organization_project":                                           resourceGithubOrganizationProject(),
+			// "github_organization_project":                                           resourceGithubOrganizationProject(), // DISABLED: GitHub Projects v1 deprecated and removed from go-github v74
 			"github_organization_security_manager":                                  resourceGithubOrganizationSecurityManager(),
 			"github_organization_ruleset":                                           resourceGithubOrganizationRuleset(),
 			"github_organization_settings":                                          resourceGithubOrganizationSettings(),
 			"github_organization_webhook":                                           resourceGithubOrganizationWebhook(),
-			"github_project_card":                                                   resourceGithubProjectCard(),
-			"github_project_column":                                                 resourceGithubProjectColumn(),
+			// "github_project_card":                                                   resourceGithubProjectCard(), // DISABLED: GitHub Projects v1 deprecated and removed from go-github v74
+			// "github_project_column":                                                 resourceGithubProjectColumn(), // DISABLED: GitHub Projects v1 deprecated and removed from go-github v74
 			"github_release":                                                        resourceGithubRelease(),
 			"github_repository":                                                     resourceGithubRepository(),
 			"github_repository_autolink_reference":                                  resourceGithubRepositoryAutolinkReference(),
@@ -179,7 +179,7 @@ func Provider() *schema.Provider {
 			"github_repository_environment_deployment_policy":                       resourceGithubRepositoryEnvironmentDeploymentPolicy(),
 			"github_repository_file":                                                resourceGithubRepositoryFile(),
 			"github_repository_milestone":                                           resourceGithubRepositoryMilestone(),
-			"github_repository_project":                                             resourceGithubRepositoryProject(),
+			// "github_repository_project":                                             resourceGithubRepositoryProject(), // DISABLED: GitHub Projects v1 deprecated and removed from go-github v74
 			"github_repository_pull_request":                                        resourceGithubRepositoryPullRequest(),
 			"github_repository_ruleset":                                             resourceGithubRepositoryRuleset(),
 			"github_repository_topics":                                              resourceGithubRepositoryTopics(),
